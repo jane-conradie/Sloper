@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DustTrail : MonoBehaviour
@@ -12,7 +10,6 @@ public class DustTrail : MonoBehaviour
         // check first if Rod is colliding with floor
         if (other.gameObject.tag == "Ground")
         {
-            // while Rod touches floor - show dust
             dustEffect.Play();
         }
     }

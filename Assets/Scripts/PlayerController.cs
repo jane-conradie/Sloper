@@ -12,9 +12,13 @@ public class PlayerController : MonoBehaviour
     SurfaceEffector2D surfaceEffector2D;
     bool canMove = true;
 
+    [SerializeField] AudioSource backgroundMusic;
+
     // Start is called before the first frame update
     void Start()
     {
+        // play background music
+        backgroundMusic.Play();
         rb2d = GetComponent<Rigidbody2D>();
         surfaceEffector2D = FindObjectOfType<SurfaceEffector2D>();
     }
