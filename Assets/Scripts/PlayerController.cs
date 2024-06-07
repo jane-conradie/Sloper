@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] float torqueAmount = 1f;
+    [SerializeField] float torqueAmount = 10f;
     [SerializeField] float boostSpeed = 40f;
     [SerializeField] float baseSpeed = 20f;
 
@@ -14,7 +14,6 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] AudioSource backgroundMusic;
 
-    // Start is called before the first frame update
     void Start()
     {
         // play background music
@@ -23,7 +22,6 @@ public class PlayerController : MonoBehaviour
         surfaceEffector2D = FindObjectOfType<SurfaceEffector2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (canMove)
